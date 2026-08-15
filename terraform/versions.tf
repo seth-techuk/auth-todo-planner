@@ -10,8 +10,8 @@ terraform {
 
   # Remote state backend (uncomment and set values before use)
   backend "s3" {
-    bucket         = "seth-terraform-state"
-    key            = "terraform.tfstate"
-    region         = "eu-north-1"
+    bucket = "seth-terraform-state"
+    key    = "terraform.tfstate"
+    region = "eu-north-1"
   }
 }
