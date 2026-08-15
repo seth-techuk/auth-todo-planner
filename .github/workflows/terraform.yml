@@ -88,6 +88,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: terraform-plan
+          path: ./terraform
 
       - name: Debug - List Files
         run: ls -la
