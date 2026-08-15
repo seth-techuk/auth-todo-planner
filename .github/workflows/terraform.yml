@@ -88,13 +88,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: terraform-plan
-      
-      - name: Debug - List Files
-        run: |
-          echo "Root files:"
-          ls -la
-          echo "Terraform folder files:"
-          ls -la terraform/
 
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
